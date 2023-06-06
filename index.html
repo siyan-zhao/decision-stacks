@@ -278,7 +278,15 @@ observations, actions, and rewards
     <table align="center" width="420px" style="margin-right: 20px;">
         <tr>
             <td>
-               <b> Long-Horizon Goal-Conditioned Environments.<b> 
+               <b> Long-Horizon Goal-Conditioned Environments.<b>
+		       
+		        We test for the planning capabilities of Decision Stacks
+on the Maze2D task from the D4RL (Fu et al., 2020) bench-
+mark. This is a challenging environment requiring an agent
+to generate a plan from a start location to a goal location.
+The demonstrations contain a sparse reward signal of +1 only when the agent reaches close to the goal.  
+ Our experiments demonstrate that Decision Stacks generates robust trajectory plans and matching action sequences, 
+outperforming baselines with significant improvements through enhanced modularity and flexible modelling.
 		      
             </td>
         </tr>
