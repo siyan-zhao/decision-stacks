@@ -235,22 +235,6 @@ We present Decision Stacks, a generative framework that decomposes goal-conditio
     <table align="center" width="420px" style="margin-right: 20px;">
         <tr>
             <td>
-                <b>Offline Reinforcement Learning Performance in MDP</b>
-            </td>
-        </tr>
-    </table>
-    <table align="center" width="420px">
-        <tr>
-            <td>
-                <img class="round" style="width: 450px" src="./resources/mdp.png"/>
-            </td>
-        </tr>
-    </table>
-</div>
-<div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
-    <table align="center" width="420px" style="margin-right: 20px;">
-        <tr>
-            <td>
                 <b>Offline Reinforcement Learning Performance in POMDP. </b>
 		     We generate the POMDPs datasets from the D4RL
 locomotion datasets. Decision Stacks
@@ -270,6 +254,31 @@ observations, actions, and rewards
         <tr>
             <td>
                 <img class="round" style="width: 450px" src="./resources/pomdp.png"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+    <table align="center" width="420px" style="margin-right: 20px;">
+        <tr>
+            <td>
+                <b>Offline Reinforcement Learning Performance in MDP. </b>
+For a fair comparison, we used the same set of hyperparameters that give the best performance for the DD baseline.
+Decision Stacks outperforms or is competitive with the other
+baselines on 6/9 environments and is among the highest in
+terms of aggregate scores. These results suggest that even in
+environments where we can make appropriate conditional
+independence assumptions using the MDP framework, the
+expressivity in the various modules of Decision Stacks is
+helpful for test-time generalization.
+
+            </td>
+        </tr>
+    </table>
+    <table align="center" width="420px">
+        <tr>
+            <td>
+                <img class="round" style="width: 450px" src="./resources/mdp.png"/>
             </td>
         </tr>
     </table>
@@ -319,7 +328,6 @@ goal position is located at the bottom right corner of the maze. The trajectory 
 time advances. The bottom two rows demonstrate that Diffuser, DD, and DS can generate good plans that can be executed well with a
 handcoded controller. However, the respective action models result in differing executions. Compared to DD and Diffuser, DS generates
 more flexible and reliable trajectories that align closely with future waypoints planned by the observation model towards the goal.
-Figure 3. Bar chart comparison of Diffuser, DD and DS with and without progressive conditioning in the single goal setting of Maze2D.
 
 				</td>
 			</tr>
