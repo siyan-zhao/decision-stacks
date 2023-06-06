@@ -321,6 +321,29 @@ Figure 3. Bar chart comparison of Diffuser, DD and DS with and without progressi
 			</tr>
 		</center>
 	</table>
+<table align="center" width="420px" style="margin-right: 20px;">
+        <tr>
+            <td>
+                <b> Architectural Flexibility of Decision Stacks</b>
+		    Decision Stacks distinctly separates the prediction of obser-
+vations, rewards, and actions employing three distinct mod-
+els that can be trained independently using teacher forcing.
+In this section, we explore the additional flexibility offered
+by different architecture choices for each module. We display a combination of 2x3x3 policy
+agents for the Hopper-medium v2 POMDP environment.
+Since we adopt a modular structure, we can compose the
+different modules efficiently and hence, we only needed
+to train 2 (state) + 3 (reward) + 3 (action) models. 
+            </td>
+        </tr>
+    </table>
+<table align="center" width="420px">
+        <tr>
+            <td>
+                <img class="round" style="width: 450px" src="./resources/flexibilitytable.png"/>
+            </td>
+        </tr>
+    </table>
 
 	<br>
 	<hr>
