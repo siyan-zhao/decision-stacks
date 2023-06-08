@@ -12,4 +12,19 @@ Reinforcement learning provides a compelling approach for tackling various aspec
 
 ## Code and Instructions
 
+## Environment Installation
+
+To set up the environment required for running the project, follow the steps below:
+
+1. Clone the repository:
+Dependencies are in [`env.yml`](env.yml). Install with:
+
+```
+conda env create -f env.yml
+conda activate decisionstacks
+pip install -e .
+```
+
+
 We will be releasing the code and instructions shortly. Stay tuned for updates!
+
