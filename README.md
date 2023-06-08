@@ -1,11 +1,12 @@
 # Decision Stacks: Flexible Reinforcement Learning via Modular Generative Models
-Siyan Zhao
-Aditya Grover
 
+Authors: Siyan Zhao, Aditya Grover
 
-Reinforcement learning presents an attractive paradigm to reason about several distinct aspects of sequential decision making, such as specifying complex goals, planning future observations and actions, and critiquing their utilities. However, the combined integration of these capabilities poses competing algorithmic challenges in retaining maximal expressivity while allowing for flexibility in modeling choices for efficient learning and inference. We present Decision Stacks, a generative framework that decomposes goal-conditioned policy agents into 3 generative modules. These modules simulate the temporal evolution of observations, rewards, and actions via independent generative models that can be learned in parallel via teacher forcing. Our framework guarantees both expressivity and flexibility in designing individual modules to account for key factors such as architectural bias, optimization objective and dynamics, transferrability across domains, and inference speed. Our empirical results demonstrate the effectiveness of Decision Stacks for offline policy optimization for several MDP and POMDP environments, outperforming existing methods and enabling flexible generative decision making.
+Reinforcement learning provides a compelling approach for tackling various aspects of sequential decision making, such as defining complex goals, planning future actions and observations, and evaluating their utilities. However, effectively integrating these capabilities while maintaining both expressive power and flexibility in modeling choices poses significant algorithmic challenges for efficient learning and inference. In this work, we introduce Decision Stacks, a generative framework that decomposes goal-conditioned policy agents into three distinct generative modules. These modules utilize independent generative models to simulate the temporal evolution of observations, rewards, and actions, enabling parallel learning through teacher forcing. Our framework ensures both expressivity and flexibility by allowing designers to tailor individual modules to incorporate architectural bias, optimization objectives, dynamics, domain transferability, and inference speed. Through extensive empirical evaluations, we demonstrate the effectiveness of Decision Stacks in offline policy optimization across various Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs), outperforming existing methods and facilitating flexible generative decision making.
 
-![](https://github.com/siyan-zhao/decision-stacks/resources/traj.gif)
-![](https://github.com/siyan-zhao/decision-stacks/resources/ds.gif)
+![Example Trajectory](https://github.com/siyan-zhao/decision-stacks/resources/traj.gif)
+![Decision Stacks Framework](https://github.com/siyan-zhao/decision-stacks/resources/ds.gif)
 
-## code and instruction will be released soon
+## Code and Instructions
+
+We will be releasing the code and instructions shortly. Stay tuned for updates!
