@@ -25,17 +25,17 @@ conda activate decisionstacks
 pip install -e .
 ```
 
-2. Install DR4L
-```
-git clone https://github.com/Farama-Foundation/d4rl.git
-cd d4rl
-pip install -e .
-```
-
-Or, alternatively:
-```
-pip install git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl
-```
+2. Install DR4L 
+  ```
+  git clone https://github.com/Farama-Foundation/d4rl.git
+  cd d4rl
+  pip install -e .
+  
+  ```
+  Or, alternatively:
+  ```
+  pip install git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl
+  ```
 
 We will be releasing the instructions shortly. Stay tuned for updates!
 
