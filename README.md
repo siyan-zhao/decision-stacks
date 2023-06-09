@@ -37,5 +37,5 @@ Or, alternatively:
 pip install git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl
 ```
 
-We will be releasing the code and instructions shortly. Stay tuned for updates!
+We will be releasing the instructions shortly. Stay tuned for updates!
 
