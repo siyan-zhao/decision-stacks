@@ -2,5 +2,6 @@
   title={Decision Stacks: Flexible Reinforcement Learning
 via Modular Generative Models},
   author={Siyan Zhao and Aditya Grover},
+  journal={arXiv preprint arXiv:2306.06253},
   year={2023}
 }
