@@ -22,7 +22,6 @@ Dependencies are in [`env.yml`](env.yml). Install with:
 ```
 conda env create -f env.yml
 conda activate decisionstacks
-pip install -e .
 ```
 
 2. Install DR4L 
