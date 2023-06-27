@@ -6,20 +6,19 @@ class Config(ParamsProto):
     # misc
     seed = 100
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    bucket = '/home/data/ckpts/siyanz/dd_bayesian/decision_act_transformer'
-    dataset = 'hopper-medium-expert-v2'
-
+    # initialize
+    bucket = ''
+    dataset = ''
+    reward_model_name = ''
+    action_model_name = ''
+    state_model_name = ''
     train_inv = False
     train_rew = False
-    train_state = True
+    train_state = False
+    
     ## model
-    reward_model_name = 'mlp'
-    action_model_name = 'transformer'
-    state_model_name = 'diffusion'
     model = 'models.TemporalUnet'
     decision_model = 'models.Decision_Stacks'
-
     horizon = 100
     n_diffusion_steps = 200
     transformer_rew = True
@@ -37,7 +36,7 @@ class Config(ParamsProto):
     renderer = 'utils.MuJoCoRenderer'
 
     ## dataset
-    loader = 'datasets.SequenceDataset_gd_pomdp'
+    loader = 'datasets.SequenceDataset_pomdp'
     normalizer = 'CDFNormalizer'
     preprocess_fns = []
     clip_denoised = True
@@ -61,8 +60,8 @@ class Config(ParamsProto):
     loss_type = 'l2'
     n_train_steps = 2e6
     batch_size = 32
-    learning_rate = 3e-4
-    gradient_accumulate_every = 2 # can set this to 1 and enlarge batch size to speed up training
+    learning_rate = 5e-4
+    gradient_accumulate_every = 1
     ema_decay = 0.995
     log_freq = 1000
     save_freq = 100000
