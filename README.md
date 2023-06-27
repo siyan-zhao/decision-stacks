@@ -37,5 +37,34 @@ pip install -e .
   pip install git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl
   ```
 
-We will be releasing the instructions shortly. Stay tuned for updates!
+## Train and eval
 
+First, change the path here [train_decision_stacks_mdp.py#L139](https://github.com/siyan-zhao/decision-stacks/blob/main/code/scripts/train_decision_stacks_mdp.py#L139)
+
+1. Example training scripts are located in [code/scripts/](code/scripts/)
+   For instance, you can run the following commands to train observation, reward, and action models independently:
+   
+   Train a diffusion-based observation model:
+   ```
+   bash ds_train_state.sh
+   ```
+   Train a transformer-based action model:
+   ```
+   bash ds_train_act.sh
+   ```
+   Train an MLP-based reward model:
+   ```
+   bash ds_train_rew.sh
+   ```
+3. Evaluate with
+   ```
+   python eval_mdp.py
+   ```
+   or
+   ```
+   python eval_pomdp.py
+   ```
+## Contact:
+If you have any questions regarding this codebase, please reach out to siyanz@g.ucla.edu.
+## Acknowledgment:
+This codebase is derived from [decision diffuser](https://github.com/anuragajay/decision-diffuser/tree/main/code)
