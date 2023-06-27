@@ -18,14 +18,14 @@ def evaluate_if_trained():
     env = 'halfcheetah-medium-replay-v2'
     cmd = " python eval_mdp_decision_stacks.py \
         --env_name {} \
-        --stateckpt state_1500000.pt \
+        --stateckpt state_state_best.pt \
         --state_model_name diffusion \
-        --statefolder mdp_orig_dd \
+        --statefolder ds_statediff_mdp_eval \
         --action_model_name transformer \
         --actfolder ds_acttrans_mdp_eval \
         --actckpt best.pt \
-        --reward_model_name transformer \
-        --rewfolder ds_rewtrans_mdp_eval \
+        --reward_model_name mlp \
+        --rewfolder ds_rewmlp_mdp_eval \
         --rewckpt best.pt \
         --testrt {} \
         --noise_scale 0.1 \
